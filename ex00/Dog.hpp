@@ -17,7 +17,7 @@ class Dog : public Animal
 		
 		// Operators
 		Dog & operator=(const Dog &assign);
-		virtual void	makeSound( void ) const;
+		void	makeSound( void ) const;
 		
 	private:
 		

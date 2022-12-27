@@ -37,14 +37,14 @@ void    testCopy( void )
     jack.addIdea("Eat carpet");
     jack.getIdeas();
     second = jack;
-    jack.addIdea("Eat WRONG");
-    second.getIdeas();
+    jack.addIdea("Eat shit");
+    second.addIdea("Dont eat shit");
     jack.getIdeas();
+    second.getIdeas();
 }
 
 int main()
 {
-    Animal an("some");
-    Animal an;
-    
+    // Animal an;
+    testCopy();
 }

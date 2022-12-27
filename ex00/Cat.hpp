@@ -17,7 +17,7 @@ class Cat : public Animal
 		
 		// Operators
 		Cat & operator=(const Cat &assign);
-		virtual void	makeSound( void ) const;
+		void	makeSound( void ) const;
 
 	private:
 		

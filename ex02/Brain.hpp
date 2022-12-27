@@ -12,16 +12,17 @@ class Brain
 		Brain(const Brain &copy);
 		
 		// Destructor
-		~Brain();
+		virtual ~Brain();
 		
 		// Operators
 		Brain & operator=(const Brain &assign);
-
-		std::string ideas[100];
-		int			idea_count;
+		
+		void	addIdea(std::string idea);
+		void	getIdeas( void );
 
 	private:
-		
+		std::string _ideas[100];
+		int			_idea_count;
 };
 
 #endif

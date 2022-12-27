@@ -3,7 +3,7 @@
 // Constructors
 Animal::Animal()
 {
-	_type = "";
+	_type = "Default Animal";
 	std::cout << "\e[0;33mDefault Constructor called of Animal\e[0m" << std::endl;
 }
 

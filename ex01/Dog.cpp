@@ -38,15 +38,10 @@ void	Dog::makeSound( void ) const
 
 void	Dog::addIdea(std::string idea)
 {
-	_brain->ideas[_brain->idea_count] = idea;
-	_brain->idea_count++;
+	_brain->addIdea(idea);
 }
 
 void	Dog::getIdeas( void )
 {
-	int i;
-
-	i = -1;
-	while (++i <= _brain->idea_count)
-		std::cout << _brain->ideas[i] << std::endl;
+	_brain->getIdeas();
 }

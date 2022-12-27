@@ -39,16 +39,10 @@ void	Cat::makeSound( void ) const
 
 void	Cat::addIdea(std::string idea)
 {
-	_brain->ideas[_brain->idea_count] = idea;
-	_brain->idea_count++;
+	_brain->addIdea(idea);
 }
 
 void	Cat::getIdeas( void )
 {
-	int i;
-
-	i = -1;
-	while (++i <= _brain->idea_count)
-		std::cout << _brain->ideas[i] << std::endl;
-
+	_brain->getIdeas();
 }
